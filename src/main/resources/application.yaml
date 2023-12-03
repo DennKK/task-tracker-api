@@ -1,1 +1,8 @@
+server:
+  port: 8080
 
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/ttdb
+    username: tt
+    password: tt
