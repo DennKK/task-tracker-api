@@ -6,3 +6,6 @@ spring:
     url: jdbc:postgresql://localhost/ttdb
     username: tt
     password: tt
+  jpa:
+    hibernate:
+      ddl-auto: update

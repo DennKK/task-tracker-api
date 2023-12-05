@@ -1,4 +1,4 @@
-package com.boot.tasktrackerapi;
+package com.boot.task.tracker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
