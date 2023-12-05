@@ -1,10 +1,11 @@
-package com.boot.tasktrackerapi.store.entities;
+package com.boot.task.tracker.store.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -33,7 +34,8 @@ public class ProjectEntity {
     @Builder.Default
     private LocalDate createdAt = LocalDate.now();
     private String description;
-    @Builder.Default
+    @JoinColumn(name = "project_id", referencedColumnName="id")
     @OneToMany
+    @Builder.Default
     private List<TaskStateEntity> taskStates = new ArrayList<>();
 }
