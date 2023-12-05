@@ -1,13 +1,11 @@
-package com.boot.tasktrackerapi;
+package com.boot.task.tracker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class TaskTrackerApiApplicationTests {
-
 	@Test
 	void contextLoads() {
 	}
-
 }
